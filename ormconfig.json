@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "postgres",
+    "password": "gobarber",
+    "database": "gobarber",
+    "entities": [
+        "./src/models/*.ts"
+    ],
+    "synchronize": true,
+    "migrations": [
+        "./src/database/migrations/*.ts"  
+    ],
+    "cli": {
+        "migrationsDir": "./src/database/migrations"
+    }
+}
