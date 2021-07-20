@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
-    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "test": "jest"
   },
   "dependencies": {
     "@types/date-fns": "^2.6.0",
@@ -22,6 +23,7 @@
     "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "ts-node-dev": "^1.1.6",
+    "tsyringe": "^4.6.0",
     "typeorm": "^0.2.32",
     "typescript": "^4.3.2",
     "uuidv4": "^6.2.8"
@@ -29,10 +31,12 @@
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.10",
+    "@types/jest": "^26.0.24",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/multer": "^1.4.5",
     "eslint": "^7.27.0",
     "eslint-import-resolver-typescript": "^2.4.0",
+    "jest": "^27.0.6",
     "tsconfig-paths": "^3.10.1"
   }
 }
